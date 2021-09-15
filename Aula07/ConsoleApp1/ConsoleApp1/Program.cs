@@ -34,6 +34,15 @@ namespace ConsoleApp1
                     case 1:
                         DapperService.ConsultarLinhas(conexao);
                         break;
+                    case 2:
+                        DapperService.CriarAluno(conexao);
+                        break;
+                    case 3:
+                        DapperService.AtualizarAluno(conexao);
+                        break;
+                    case 4:
+                        DapperService.RemoverAluno(conexao);
+                        break;
                     default:
                         Console.WriteLine("Opcao informada nao e valida, tente novamente!");
                         break;
