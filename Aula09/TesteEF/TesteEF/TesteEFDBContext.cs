@@ -16,7 +16,7 @@ namespace TesteEF
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=localhost;Database=TESTE_ENTITY_FRAMEWORK;User Id=sa;Password=Root@123;");
+            optionsBuilder.UseSqlServer("Data Source=RECSP-SRV-BDD1.fcrecovery.com.ar,1344;Initial Catalog=Vuelcos;Integrated Security=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
