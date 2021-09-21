@@ -6,17 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TesteEF.Models
+namespace ProdutosEF.Models
 {
-    [Table("TB_USER")]
-    class User
+
+    [Table("TB_USUARIO")]
+    class Usuario
     {
         [Key]
-        [Column("ID_USER")]
+        [Column("ID_USUARIO")]
         public int Id { get; set; }
-        [Column("NM_USER", TypeName = "VARCHAR(100)")]
-        public string Name { get; set; }
 
-        public virtual ICollection<BlogUser> BlogsUser {get; set;}
+        [Column("NM_USUARIO", TypeName = "VARCHAR(100)")]
+        public string Nome { get; set; }
+
+        public virtual ICollection<Venda> Vendas { get; set; }
     }
 }

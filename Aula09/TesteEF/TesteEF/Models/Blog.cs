@@ -15,15 +15,11 @@ namespace TesteEF.Models
         [Column("ID_BLOG")]
         public int Id { get; set; }
         
-        [Column("ID_USER_BLOG")]
-        public int IdUser { get; set; }
-
         [Column("DSC_BLOG", TypeName = "VARCHAR(100)")]
         public string Name { get; set; }
         [Column("DT_CREATED")]
         public DateTime CreatedTimestamp { get; set; }
 
-        [ForeignKey("IdUser")]
-        public virtual User User { get; set; }
+        public virtual ICollection<BlogUser> BlogsUser { get; set; }
     }
 }
