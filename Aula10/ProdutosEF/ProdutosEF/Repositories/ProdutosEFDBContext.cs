@@ -11,6 +11,9 @@ namespace ProdutosEF.Repositories
     class ProdutosEFDBContext : DbContext
     {
         public DbSet<Produto> Produto { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Venda> Venda { get; set; }
+        public DbSet<VendaItem> VendaItem { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
