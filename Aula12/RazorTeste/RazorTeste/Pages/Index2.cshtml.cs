@@ -12,7 +12,7 @@ namespace RazorTeste.Pages
         public string Message { get; private set; }
         public void OnGet()
         {
-            Message = "Horario do Servidor e:" + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
+            Message = "Horario do Servidor e: " + DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
         }
     }
 }
